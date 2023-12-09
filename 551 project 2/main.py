@@ -2,8 +2,8 @@
 from GameEngine import GameEngine
 
 def main():
-    game = GameEngine()
-    game.start()
+    game_engine = GameEngine()
+    game_engine.run_game()
 
 if __name__ == "__main__":
     main()
