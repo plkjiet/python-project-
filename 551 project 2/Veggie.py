@@ -2,10 +2,6 @@
 from FieldInhabitant import FieldInhabitant
 
 class Veggie(FieldInhabitant):
-    def __init__(self, name, symbol, points):
-        super().__init__(symbol)
-        self.name = name
-        self.points = points
-
-    def __str__(self):
-        return f"{self.symbol} ({self.name}, {self.points})"
+    def __init__(self, symbol, points, x, y):
+        super().__init__(symbol, x, y)  # Initialize the base class
+        self.points = points  # Points for the vegetable
